@@ -1,0 +1,18 @@
+<% layout('/layouts/boilerplate') %>
+<body>
+    <div class="listing-container">
+        <h3 class="listing-title">Listing Details:</h3>
+        <ul class="listing-details">
+            <img src="<%= listing.image.url %>" alt="hotel image" class="show-img-hotel">
+            <li class="listing-item"><b>Title:</b> <%= listing.title %></li>
+            <li class="listing-item"><b>Description:</b> <%= listing.description %></li>
+            <li class="listing-item"><b>Price:</b> &#8377;<%= listing.price.toLocaleString("en-IN") %></li>
+            <li class="listing-item"><b>Location:</b> <%= listing.location %></li>
+            <li class="listing-item"><b>Country:</b> <%= listing.country %></li>
+        </ul>
+        <a class="edit-link" href="/listings/<%= listing._id %>/edit">Edit this listing</a>
+        <form action="/listings/<%= listing._id %>?_method=DELETE" method="POST" class="delete-form">
+            <button class="delete-button">Delete</button>
+        </form>
+    </div>
+</body>

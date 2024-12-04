@@ -1,0 +1,492 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+/*navbar*/
+.navbar{
+    height: 5rem;
+    background-color: #fff;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+    padding: 0 15px;
+    margin: 0;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: black;
+    border-radius: 5px;
+  }
+
+.navbar-collapse {
+    background-color: #fff; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-collapse.show {
+    background-color: #ffffff; /* Background when expanded */
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 5px 15px; 
+    margin: 0;  
+  }
+  
+
+/*Footer*/
+
+.f-info{
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.f-info-links, .f-info-socials{
+    width: 100%;
+}
+
+.f-info-socials i {
+    margin-right: 1rem;
+    margin-right: 1.2rem;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+/*cards*/
+
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/*card effect*/
+
+.card-img-overlay{
+    opacity: 0;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/*form styling*/
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 40px auto;
+}
+
+.form-title {
+    text-align: center;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    color: #222;
+    transition: border-color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.form-textarea {
+    resize: none;
+    height: 80px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #444;
+}
+
+.valid-feedback,
+.invalid-feedback {
+    margin-top: 0; 
+    padding: 0;    
+}
+
+.newformdiv{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*show.ejs styling*/
+.listing-container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+.listing-title {
+    text-align: center;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+
+.listing-details {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listing-item {
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+
+.listing-item:last-child {
+    border-bottom: none;
+}
+
+.edit-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-link:hover {
+    background-color: #ccc;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.delete-button {
+    padding: 0.5rem 1rem;
+    background-color: #ff4444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+
+.show-img-hotel {
+    width: 100%; 
+    max-width: 400px; 
+    max-height: 300px;
+    margin: 1rem auto; 
+    display: block; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*edit.ejs styling*/
+.edit-form-container {
+    max-width: 80%;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.edit-form-input,
+.edit-form-textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    color: #222;
+    transition: border-color 0.3s ease;
+}
+
+.edit-form-input:focus,
+.edit-form-textarea:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.edit-form-textarea {
+    resize: none;
+    height: 100px;
+}
+
+.edit-form-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.edit-form-button:hover {
+    background-color: #444;
+}
+
+/*home.ejs styling*/
+
+.home-container {
+    max-width: 80%;
+    margin: auto;
+    padding: 2rem 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.hero-section {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #fe424d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d03640;
+}
+
+.about-section {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.gallery-section {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery-image {
+    width: calc(33.33% - 1rem);
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .home-container {
+        max-width: 90%;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .gallery-image {
+        width: calc(50% - 1rem);
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .gallery-image {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+    }
+
+    .gallery-image {
+        height: 120px;
+    }
+}

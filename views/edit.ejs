@@ -1,0 +1,78 @@
+<% layout('/layouts/boilerplate') %>
+<body>
+    <div class="edit-form-container">
+        <h1 class="edit-form-title">Edit Listing</h1>
+        <form action="/listings/<%= listing._id %>?_method=PUT" method="POST" novalidate class="needs-validation">
+
+            
+            <!-- Title Field -->
+            <div class="edit-form-group">
+                <label for="title">Title:</label>
+                <input id="title" class="edit-form-input" type="text" name="listing[title]" 
+                       value="<%= listing.title %>" required>
+                <div class="valid-feedback">Title looks good!</div>
+                <div class="invalid-feedback">Please enter the title.</div>
+            </div>
+            
+            <!-- Description Field -->
+            <div class="edit-form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" class="edit-form-textarea" name="listing[description]" required>
+                    <%= listing.description %>
+                </textarea>
+                <div class="valid-feedback">Description is valid!</div>
+                <div class="invalid-feedback">Please fill in the description.</div>
+            </div>
+            
+            <!-- Image Filename Field -->
+            <div class="edit-form-group">
+                <label for="image-filename">Image Filename:</label>
+                <input id="image-filename" class="edit-form-input" type="text" name="listing[image][filename]" 
+                       value="<%= listing.image.filename %>" required>
+                <div class="valid-feedback">Filename looks good!</div>
+                <div class="invalid-feedback">Please provide the image filename.</div>
+            </div>
+            
+            <!-- Image URL Field -->
+            <div class="edit-form-group">
+                <label for="image-url">Image URL:</label>
+                <input id="image-url" class="edit-form-input" type="text" name="listing[image][url]" 
+                       value="<%= listing.image.url %>" required>
+                <div class="valid-feedback">Image URL looks good!</div>
+                <div class="invalid-feedback">Please provide a valid image URL.</div>
+            </div>
+            
+            <!-- Price Field -->
+            <div class="edit-form-group">
+                <label for="price">Price:</label>
+                <input id="price" class="edit-form-input" type="number" name="listing[price]" 
+                       value="<%= listing.price %>" required>
+                <div class="valid-feedback">Price is valid!</div>
+                <div class="invalid-feedback">Please enter a valid price.</div>
+            </div>
+            
+            <!-- Location Field -->
+            <div class="edit-form-group">
+                <label for="location">Location:</label>
+                <input id="location" class="edit-form-input" type="text" name="listing[location]" 
+                       value="<%= listing.location %>" required>
+                <div class="valid-feedback">Location looks good!</div>
+                <div class="invalid-feedback">Please enter the location.</div>
+            </div>
+            
+            <!-- Country Field -->
+            <div class="edit-form-group">
+                <label for="country">Country:</label>
+                <input id="country" class="edit-form-input" type="text" name="listing[country]" 
+                       value="<%= listing.country %>" required>
+                <div class="valid-feedback">Country is valid!</div>
+                <div class="invalid-feedback">Please specify the country.</div>
+            </div>
+            
+            <!-- Submit Button -->
+            <div class="edit-form-group">
+                <button class="edit-form-button" type="submit">Update Listing</button>
+            </div>
+        </form>
+    </div>
+</body>
